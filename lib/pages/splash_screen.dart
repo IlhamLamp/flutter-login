@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'sign_in.dart';
 import 'sign_up.dart';
+import '../constants.dart';
 
 class SplashScreen extends StatelessWidget {
   const SplashScreen({Key? key}) : super(key: key);
@@ -12,18 +13,16 @@ class SplashScreen extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            // const FlutterLogo(
-            //   size: 150,
-            // ),
             Image.asset("assets/icon/logo.png", width: 120, height: 250),
             // const SizedBox(height: 500),
-            const Text(
-              'Memorest',
-              style: TextStyle(fontSize: 30),
+            Text(
+              "Memorest",
+              style: primaryTextStyle.copyWith(fontSize: 30, fontWeight: bold),
             ),
-            const Text(
+            SizedBox(height: 13),
+            Text(
               'share your memories',
-              style: TextStyle(fontSize: 18),
+              style: TextStyle(fontSize: 30),
             ),
             const SizedBox(height: 20),
             ElevatedButton(
