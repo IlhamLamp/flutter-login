@@ -17,7 +17,7 @@ class SplashScreen extends StatelessWidget {
             ),
             const SizedBox(height: 20),
             Text(
-              'Deskripsi Splash Screen',
+              'share your memories',
               style: TextStyle(fontSize: 18),
             ),
             const SizedBox(height: 20),
