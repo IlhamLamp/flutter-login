@@ -15,8 +15,12 @@ class SplashScreen extends StatelessWidget {
             // const FlutterLogo(
             //   size: 150,
             // ),
-            Image.asset("assets/icon/logo.png", width: 170, height: 300),
-            const SizedBox(height: 20),
+            Image.asset("assets/icon/logo.png", width: 120, height: 250),
+            // const SizedBox(height: 500),
+            const Text(
+              'Memorest',
+              style: TextStyle(fontSize: 30),
+            ),
             const Text(
               'share your memories',
               style: TextStyle(fontSize: 18),
