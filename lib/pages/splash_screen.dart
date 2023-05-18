@@ -12,35 +12,35 @@ class SplashScreen extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            FlutterLogo(
-              size: 150,
-            ),
+            // const FlutterLogo(
+            //   size: 150,
+            // ),
+            Image.asset("assets/icon/logo.png", width: 170, height: 300),
             const SizedBox(height: 20),
-            Text(
+            const Text(
               'share your memories',
               style: TextStyle(fontSize: 18),
             ),
             const SizedBox(height: 20),
             ElevatedButton(
               onPressed: () {
+                // fungsi untuk tombol login di sini
                 Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context) => const LoginPage()),
                 );
-                // Tambahkan fungsi untuk tombol login di sini
               },
               child: const Text('Login'),
             ),
             const SizedBox(height: 10),
             ElevatedButton(
               onPressed: () {
+                // fungsi untuk tombol daftar di sini
                 Navigator.push(
                   context,
                   MaterialPageRoute(
                       builder: (context) => const RegistrationPage()),
                 );
-                const RegistrationPage();
-                // Tambahkan fungsi untuk tombol daftar di sini
               },
               child: const Text('Daftar'),
             ),
